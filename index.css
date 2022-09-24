@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(219, 14%, 37%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(210, 60%, 98%);
+}
+main {
+  width: 800px;
+  padding: 40px 30px 20px 30px;
+  background-color: white;
+  font-size: 16px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+h1 {
+  color: black;
+}
+.mark {
+  margin-top: 10px;
+}
+.mark:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+.no-of-notification {
+  background-color: hsl(219, 85%, 26%);
+  padding: 3px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: white;
+  margin: 0 0 0 10px;
+}
+.new-notification {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: hsl(210, 60%, 98%);
+  margin: 10px 0;
+}
+.old-notification {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+
+  margin: 10px 0;
+}
+.toggled-notification {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+
+  margin: 10px 0;
+}
+.toggle-text {
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid hsl(223, 29%, 78%);
+  border-radius: 10px;
+  margin: 10px 0;
+  /* height: 0px;
+  overflow: hidden; */
+
+  display: none;
+}
+.active .toggle-text {
+  /* height: 80px; */
+  transition: 0.5s;
+  display: block;
+}
+.toggle-text:hover {
+  background-color: hsl(211, 100%, 95%);
+  border: none;
+  cursor: pointer;
+}
+article {
+  margin: 0px 0 0 30px;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+.time {
+  display: block;
+}
+.name {
+  font-weight: 800;
+  color: black;
+}
+.name:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+.reaction {
+  font-weight: 500;
+}
+.subject {
+  font-weight: 800;
+}
+.subject:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+.time {
+}
+.dot {
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.end-image {
+  margin-left: 300px;
+}
+.end-image:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  main {
+    width: 95%;
+    font-size: 13px;
+  }
+  article {
+    margin: 10px 0 0 10px;
+  }
+  .new-notification,
+  .old-notification,
+  .toggled-notification {
+    padding: 20px 10px;
+  }
+  .end-image {
+    margin-left: 10px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .no-of-notification {
+    padding: 3px 10px;
+  }
+}
