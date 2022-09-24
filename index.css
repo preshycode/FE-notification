@@ -158,3 +158,27 @@ img {
     padding: 3px 10px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  main {
+    width: 95%;
+    font-size: 13px;
+  }
+  article {
+    margin: 10px 0 0 10px;
+  }
+  .new-notification,
+  .old-notification,
+  .toggled-notification {
+    padding: 20px 10px;
+  }
+  .end-image {
+    margin-left: 10px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .no-of-notification {
+    padding: 3px 10px;
+  }
+}
